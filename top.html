@@ -14,7 +14,7 @@ img {
 div {
    border-bottom:1px solid black;
 }
-li {
+ol {
   border-right:1px solid gray;
   width:60px;
   margin:0px;
@@ -40,6 +40,17 @@ body {
 #happy{
   display: none;
 }
+@media (max-width:800px){
+  #grid{
+    display:block;
+    }
+    ol{
+      border-right:none;
+    }
+}
+li{
+    border-right:none;
+    }
 </style>
 
 <!-- Google tag (gtag.js) -->
@@ -73,7 +84,7 @@ body {
 <li><a href="supporter.html">서포터</a></li>
 </ol>
 
-<div id: "article">
+<div id= "article">
   <p>
 탑은 소환사의 협곡에서 EU 스타일 포지션 중 상단 라인에서 챔피언을 플레이하는 포지션을 지칭한다.<br>
 정글, 미드와 함께 상체를 구성한다. 하지만 상체 중에서는 가장 영향력이 낮은 것으로 평가되고 있으며,
