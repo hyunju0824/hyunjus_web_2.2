@@ -19,21 +19,19 @@
 </head>
 <body>
 
-
-      <input id="night_day" type="button" value="night" onclick="
-      if (document.querySelector('#night_day').value === 'night'){
-      document.querySelector('body').style.backgroundColor='black';
-    document.querySelector('body').style.color='white';
-    document.querySelector('#night_day').value = 'day';
+  <input type="button" value="night" onclick="
+ 
+      if (this.value === 'night'){
+        var target = document.querySelector('body');
+      target.style.backgroundColor='black';
+    target.style.color='white';
+    this.value = 'day';
       } else {
-    document.querySelector('body').style.backgroundColor='white';
-      document.querySelector('body').style.color='black';
-      document.querySelector('#night_day').value = 'night';
+    target.style.backgroundColor='white';
+      target.style.color='black';
+      this.value = 'night';
       }
       ">
-
-      밤/낮 테마 바꾸기
-
 
 <div id="happy">
 <img src="images/200x200.png" alt="lol.jpg">
@@ -69,6 +67,18 @@ clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
 </div>
 </div>
 
+<input type="button" value="night" onclick="
+ 
+      if (this.value === 'night'){
+      document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';
+    this.value = 'day';
+      } else {
+    document.querySelector('body').style.backgroundColor='white';
+      document.querySelector('body').style.color='black';
+      this.value = 'night';
+      }
+      ">
 
 <p> <div id="disqus_thread"></div>
 <script>
@@ -103,6 +113,9 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+
+
+
 
 </body>
 </html>
